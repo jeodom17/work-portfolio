@@ -1,0 +1,130 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(238, 229, 229);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.776);
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    background-color: turquoise;
+    color:rgba(0, 0, 0, 0.776); 
+    padding: 15px;
+    font-size: 50px;
+    margin: 10px;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li a {
+    color: turquoise;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0 30px;
+    border-bottom: turquoise 5px solid;
+    margin: 5px
+}
+
+#subheader {
+    background-image: url(/assets/images/ocean.jpeg);
+    height: 250px;
+    background-size: cover;
+    position: relative;
+}
+
+#subheader h3 {
+    font-size: 50px;
+    background-color: turquoise;
+    width: fit-content;
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    padding: 10px;
+}
+
+section {
+    display: flex;
+}
+
+.section-title {
+    font-size: 60px;
+    border-right:navy 5px solid;
+    width: 20%;
+    text-align: right;
+
+}
+
+.section-content {
+    display: flex;
+    width: 80%;
+    /* align-items: center; */
+}
+
+#about-me {
+    align-items: center;
+}
+
+#contact{
+    align-items: center
+    ;
+}
+#contact .section-content {
+    justify-content: space-evenly;
+    font-size: 25px;    
+}
+
+#contact .section-content a {
+    text-decoration: none;
+    color: navy;
+    border-bottom: navy 5px solid;
+}
+
+}
+
+#work .section-title {
+    align-items: center;
+}
+#work .section-content {
+    display: grid;
+    grid-template-areas: "project1 project1"
+                        " project2 project3"
+                        "project2  project4"
+                        "project5 project5";
+    grid-gap: 10px;
+
+}
+#project1 {
+    position: relative;
+    grid-area: project1;
+    background-image: url(/assets/images/mern-stack.png)
+}
+#project2 {
+    grid-area: project2;
+}
+#project3 {
+    grid-area: project3;
+}
+#project4 {
+    grid-area: project4;
+}
+#project5 {
+    grid-area: project5;
+}
+
+.project-card {
+    border: black 5px solid;
+}
+
+#project1 .project-titles {
+    background-color: turquoise;
+    width: fit-content;
+    padding: 0px;
+    font-size: 150%;
+}
