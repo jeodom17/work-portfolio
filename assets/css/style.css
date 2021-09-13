@@ -39,8 +39,12 @@ nav ul li a {
     position: relative;
 }
 
+#subheader img {
+    width: 244px;
+    margin-left: 10px;
+}
 #subheader h3 {
-    font-size: 50px;
+    font-size: 30px;
     background-color: turquoise;
     width: fit-content;
     position: absolute;
@@ -70,10 +74,17 @@ section {
 #about-me {
     align-items: center;
 }
+#about-me h2 {
+    padding-right: 10px;
+    margin-right: 20px;
+}
 
 #contact{
     align-items: center
     ;
+}
+#contact h2 {
+    padding-right: 10px;
 }
 #contact .section-content {
     justify-content: space-evenly;
@@ -86,10 +97,11 @@ section {
     border-bottom: navy 5px solid;
 }
 
-}
 
 #work .section-title {
     align-items: center;
+    padding-right: 10px;
+    margin-right: 20px ;
 }
 #work .section-content {
     display: grid;
@@ -129,11 +141,20 @@ section {
 
 .project-card {
     border: turquoise 5px solid;
+    background-color: powderblue;
+    opacity: 75%;
+    
+}
+
+.project-card:hover {
+    border: turquoise 8px solid;
+    background-color: rgb(174, 222, 228 0.3);
+    opacity: 100%;
 }
 
 .project-titles {
     background-color: turquoise;
     width: fit-content;
-    padding: 0px;
     font-size: 150%;
+    text-decoration: none;
 }
