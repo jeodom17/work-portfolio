@@ -106,23 +106,32 @@ section {
     background-image: url(/assets/images/mern-stack.png)
 }
 #project2 {
+    position: relative;
     grid-area: project2;
+    background-image: url(/assets/images/led-wall.jpeg);
 }
 #project3 {
+    position: relative;
     grid-area: project3;
+    background-image: url(/assets/images/calculator.jpeg);
 }
 #project4 {
+    position: relative;
     grid-area: project4;
+    background-image: url(/assets/images/pastel-puzzle.jpeg);
 }
+
 #project5 {
+    position: relative;
     grid-area: project5;
+    background-image: url(/assets/images/run-buddy.jpeg);
 }
 
 .project-card {
-    border: black 5px solid;
+    border: turquoise 5px solid;
 }
 
-#project1 .project-titles {
+.project-titles {
     background-color: turquoise;
     width: fit-content;
     padding: 0px;
