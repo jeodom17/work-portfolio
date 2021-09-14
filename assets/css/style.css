@@ -115,12 +115,12 @@ section {
 #project1 {
     position: relative;
     grid-area: project1;
-    background-image: url(./assets/images/mern-stack.png)
+    background-image: url("../images/mern-stack.png")
 }
 #project2 {
     position: relative;
     grid-area: project2;
-    background-image: url(./assets/images/led-wall.jpeg);
+    background-image: url("/assets/images/led-wall.jpeg");
 }
 #project3 {
     position: relative;
