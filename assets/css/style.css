@@ -117,7 +117,7 @@ section {
 #project2 {
   position: relative;
   grid-area: project2;
-  background-image: url("/assets/images/led-wall.jpeg");
+  background-image: url("images/led-wall.jpeg");
 }
 #project3 {
   position: relative;
