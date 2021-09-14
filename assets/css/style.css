@@ -115,28 +115,28 @@ section {
 #project1 {
     position: relative;
     grid-area: project1;
-    background-image: url(/assets/images/mern-stack.png)
+    background-image: url(./assets/images/mern-stack.png)
 }
 #project2 {
     position: relative;
     grid-area: project2;
-    background-image: url(/assets/images/led-wall.jpeg);
+    background-image: url(./assets/images/led-wall.jpeg);
 }
 #project3 {
     position: relative;
     grid-area: project3;
-    background-image: url(/assets/images/calculator.jpeg);
+    background-image: url(./assets/images/calculator.jpeg);
 }
 #project4 {
     position: relative;
     grid-area: project4;
-    background-image: url(/assets/images/pastel-puzzle.jpeg);
+    background-image: url(./assets/images/pastel-puzzle.jpeg);
 }
 
 #project5 {
     position: relative;
     grid-area: project5;
-    background-image: url(/assets/images/run-buddy.jpeg);
+    background-image: url(./assets/images/run-buddy.jpeg);
 }
 
 .project-card {
