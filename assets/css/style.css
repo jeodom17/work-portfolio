@@ -1,160 +1,156 @@
 body {
-    font-family:'Courier New', Courier, monospace;
-    background-color: rgb(238, 229, 229);
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(238, 229, 229);
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.776);
-    color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.776);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
 }
 
 h1 {
-    background-color: turquoise;
-    color:rgba(0, 0, 0, 0.776); 
-    padding: 15px;
-    font-size: 50px;
-    margin: 10px;
+  background-color: turquoise;
+  color: rgba(0, 0, 0, 0.776);
+  padding: 15px;
+  font-size: 50px;
+  margin: 10px;
 }
 nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
 }
 
 nav ul li a {
-    color: turquoise;
-    font-size: 25px;
-    text-decoration: none;
-    padding: 0 30px;
-    border-bottom: turquoise 5px solid;
-    margin: 5px
+  color: turquoise;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 0 30px;
+  border-bottom: turquoise 5px solid;
+  margin: 5px;
 }
 
 #subheader {
-    background-image: url(/assets/images/ocean.jpeg);
-    height: 250px;
-    background-size: cover;
-    position: relative;
+  background-image: url(/assets/images/ocean.jpeg);
+  height: 250px;
+  background-size: cover;
+  position: relative;
 }
 
 #subheader img {
-    width: 244px;
-    margin-left: 10px;
+  width: 244px;
+  margin-left: 10px;
 }
 #subheader h3 {
-    font-size: 30px;
-    background-color: turquoise;
-    width: fit-content;
-    position: absolute;
-    right: 35px;
-    bottom: 0;
-    padding: 10px;
+  font-size: 30px;
+  background-color: turquoise;
+  width: fit-content;
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+  padding: 10px;
 }
 
 section {
-    display: flex;
+  display: flex;
 }
 
 .section-title {
-    font-size: 60px;
-    border-right:navy 5px solid;
-    width: 20%;
-    text-align: right;
-
+  font-size: 60px;
+  border-right: navy 5px solid;
+  width: 20%;
+  text-align: right;
 }
 
 .section-content {
-    display: flex;
-    width: 80%;
-    /* align-items: center; */
+  display: flex;
+  width: 80%;
+  /* align-items: center; */
 }
 
 #about-me {
-    align-items: center;
+  align-items: center;
 }
 #about-me h2 {
-    padding-right: 10px;
-    margin-right: 20px;
+  padding-right: 10px;
+  margin-right: 20px;
 }
 
-#contact{
-    align-items: center
-    ;
+#contact {
+  align-items: center;
 }
 #contact h2 {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 #contact .section-content {
-    justify-content: space-evenly;
-    font-size: 25px;    
+  justify-content: space-evenly;
+  font-size: 25px;
 }
 
 #contact .section-content a {
-    text-decoration: none;
-    color: navy;
-    border-bottom: navy 5px solid;
+  text-decoration: none;
+  color: navy;
+  border-bottom: navy 5px solid;
 }
-
 
 #work .section-title {
-    align-items: center;
-    padding-right: 10px;
-    margin-right: 20px ;
+  align-items: center;
+  padding-right: 10px;
+  margin-right: 20px;
 }
 #work .section-content {
-    display: grid;
-    grid-template-areas: "project1 project1"
-                        " project2 project3"
-                        "project2  project4"
-                        "project5 project5";
-    grid-gap: 10px;
-
+  display: grid;
+  grid-template-areas:
+    "project1 project1"
+    " project2 project3"
+    "project2  project4"
+    "project5 project5";
+  grid-gap: 10px;
 }
 #project1 {
-    position: relative;
-    grid-area: project1;
-    background-image: url("../images/mern-stack.png")
+  position: relative;
+  grid-area: project1;
+  background-image: url("../images/mern-stack.png");
 }
 #project2 {
-    position: relative;
-    grid-area: project2;
-    background-image: url("/assets/images/led-wall.jpeg");
+  position: relative;
+  grid-area: project2;
+  background-image: url("/assets/images/led-wall.jpeg");
 }
 #project3 {
-    position: relative;
-    grid-area: project3;
-    background-image: url(./assets/images/calculator.jpeg);
+  position: relative;
+  grid-area: project3;
+  background-image: url(./assets/images/calculator.jpeg);
 }
 #project4 {
-    position: relative;
-    grid-area: project4;
-    background-image: url(./assets/images/pastel-puzzle.jpeg);
+  position: relative;
+  grid-area: project4;
+  background-image: url(/assets/images/pastel-puzzle.jpeg);
 }
 
 #project5 {
-    position: relative;
-    grid-area: project5;
-    background-image: url(./assets/images/run-buddy.jpeg);
+  position: relative;
+  grid-area: project5;
+  background-image: url(./assets/images/run-buddy.jpeg);
 }
 
 .project-card {
-    border: turquoise 5px solid;
-    background-color: powderblue;
-    opacity: 75%;
-    
+  border: turquoise 5px solid;
+  background-color: powderblue;
+  opacity: 75%;
 }
 
 .project-card:hover {
-    border: turquoise 8px solid;
-    background-color: rgb(174, 222, 228 0.3);
-    opacity: 100%;
+  border: turquoise 8px solid;
+  background-color: rgb(174, 222, 228 0.3);
+  opacity: 100%;
 }
 
 .project-titles {
-    background-color: turquoise;
-    width: fit-content;
-    font-size: 150%;
-    text-decoration: none;
+  background-color: turquoise;
+  width: fit-content;
+  font-size: 150%;
+  text-decoration: none;
 }
