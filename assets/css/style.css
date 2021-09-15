@@ -1,3 +1,7 @@
+
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Courier New", Courier, monospace;
   background-color: rgb(238, 229, 229);
@@ -25,7 +29,7 @@ nav ul {
 }
 
 section {
-    margin: 10px;
+  margin: 10px;
 }
 
 nav ul li a {
@@ -68,8 +72,7 @@ section {
 }
 
 .section-title {
-  display: flex;
-  margin: 0px;  
+  margin: 0px;
   font-size: 60px;
   border-right: navy 5px solid;
   flex-basis: 20%;
@@ -79,9 +82,10 @@ section {
 }
 
 .section-content {
-  display: flex;
   flex-basis: 78%;
-  align-items:flex-end;
+  align-items: flex-end;
+  display: flex;
+  padding: 25px;
 }
 
 #about-me {
@@ -101,10 +105,10 @@ section {
 #work .section-content {
   display: grid;
   grid-template-areas:
-      "project1 project1"
-      " project1 project1"
-      "project2  project3"
-      "project4 project5";
+    "project1 project1"
+    " project1 project1"
+    "project2  project3"
+    "project4 project5";
   grid-gap: 30px;
 }
 #contact {
@@ -115,6 +119,7 @@ section {
   margin-right: 20px;
 }
 #contact .section-content {
+  align-items:center;
   justify-content: space-evenly;
   font-size: 25px;
 }
@@ -131,27 +136,36 @@ h2 {
   grid-area: project1;
   min-height: 240px;
   background-image: url("../images/mern-stack.png");
+  background-size: cover;
 }
 #project2 {
   position: relative;
   grid-area: project2;
   background-image: url("../images/led-wall.jpeg");
+  background-size: cover;
+
 }
 #project3 {
   position: relative;
   grid-area: project3;
   background-image: url("../images/calculator.jpeg");
+  background-size: cover;
+
 }
 #project4 {
   position: relative;
   grid-area: project4;
   background-image: url("../images/pastel-puzzle.jpeg");
+  background-size: cover;
+
 }
 
 #project5 {
   position: relative;
   grid-area: project5;
   background-image: url("../images/run-buddy.jpeg");
+  background-size: cover;
+
 }
 
 .project-card {
@@ -167,41 +181,109 @@ h2 {
   background-color: rgb(174, 222, 228 0.3);
   opacity: 100%;
 }
-.project-titles h6, h4 {
-    margin: 15px;
+.project-titles h6,
+h4 {
+  margin: 15px;
 }
 .project-titles {
   background-color: turquoise;
   width: fit-content;
   font-size: 150%;
   text-decoration-style: none;
-  position:absolute;
+  position: absolute;
   bottom: 20px;
 }
 
-
+/* Below are media queries to adjust content for page size */
 
 @media screen and (max-width: 1800px) {
-    .section-title {
-        font-size: 50px;
-        
-    }   
+  .section-title {
+    font-size: 50px;
+  }
 }
 
 @media screen and (max-width: 1180px) {
-    .section-title {
-        font-size: 40px;}
-        nav {
-            flex-direction: column;
-        }
+  .section-title {
+    font-size: 40px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  ul {
+    justify-content: space-between;
+    padding-right: 40px;
+  }
 }
 
-@media screen and (max-width: 1000px) {
-    .section-title {
-        flex-basis: 100%;
-    }
-    .section-content {
-        flex-basis: 100%;
-    }
+@media screen and (max-width: 1040px) {
+  .section-title {
+    flex-basis: 100%;
+    border-right: none;
+    border-bottom: navy 5px solid;
+    margin:10px 0px 10px 10px ;
+    text-align: center;
+  }
+  .section-content {
+    flex-basis: 100%;
+  }
+}
 
+@media screen and (max-width: 960px) {
+  #subheader h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #subheader h3 {
+    font-size: 15px;
+  }
+  #contact .section-content a {
+      font-size: 20px;
+      border-bottom: navy 2px solid;
+  }
+  header nav ul a {
+    font-size: 20px; 
+    border-bottom: turquoise 2px solid;
+    padding: 5px 5px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #contact .section-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact a {
+    margin: 20px;
+  }
+  #work .section-content {
+    display: grid;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3"
+      "project4" 
+      "project5";
+    grid-gap: 10px;
+  } 
+}
+
+@media screen and (max-width: 600px) {
+  #subheader h3 {
+    font-size: 10px;
+  }
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+   header nav ul li {
+     padding: 0;
+     margin: 10px;
+      
+   }
+}
+
+@media screen and (max-width: 1040px) {
+  
 }
