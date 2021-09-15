@@ -23,6 +23,11 @@ nav ul {
   align-items: center;
 }
 
+
+section {
+    margin: 40px;
+}
+
 nav ul li a {
   color: turquoise;
   font-size: 25px;
@@ -42,6 +47,7 @@ nav ul li a {
 #subheader img {
   width: 244px;
   margin-left: 10px;
+  border-radius: 5000px;
 }
 #subheader h3 {
   font-size: 30px;
@@ -55,18 +61,22 @@ nav ul li a {
 
 section {
   display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
 .section-title {
+  margin: 0;  
   font-size: 60px;
   border-right: navy 5px solid;
-  width: 20%;
+  flex-basis: 20%;
   text-align: right;
 }
 
 .section-content {
   display: flex;
-  width: 80%;
+  flex-basis: 78%;
   /* align-items: center; */
 }
 
@@ -78,23 +88,6 @@ section {
   margin-right: 20px;
 }
 
-#contact {
-  align-items: center;
-}
-#contact h2 {
-  padding-right: 10px;
-}
-#contact .section-content {
-  justify-content: space-evenly;
-  font-size: 25px;
-}
-
-#contact .section-content a {
-  text-decoration: none;
-  color: navy;
-  border-bottom: navy 5px solid;
-}
-
 #work .section-title {
   align-items: center;
   padding-right: 10px;
@@ -103,15 +96,16 @@ section {
 #work .section-content {
   display: grid;
   grid-template-areas:
-    "project1 project1"
-    " project2 project3"
-    "project2  project4"
-    "project5 project5";
+      "project1 project1"
+      " project1 project1"
+      "project2  project3"
+      "project4 project5";
   grid-gap: 10px;
 }
 #project1 {
   position: relative;
   grid-area: project1;
+  min-height: 240px;
   background-image: url("../images/mern-stack.png");
 }
 #project2 {
@@ -140,6 +134,8 @@ section {
   border: turquoise 5px solid;
   background-color: powderblue;
   opacity: 75%;
+  /*position: relative;*/
+  min-height: 180px;
 }
 
 .project-card:hover {
@@ -147,10 +143,57 @@ section {
   background-color: rgb(174, 222, 228 0.3);
   opacity: 100%;
 }
-
+.project-titles h6, h4 {
+    margin: 15px;
+}
 .project-titles {
   background-color: turquoise;
   width: fit-content;
   font-size: 150%;
-  text-decoration: none;
+  text-decoration-style: none;
+  position:absolute;
+  bottom: 20px;
+}
+
+#contact {
+    align-items: center;
+  }
+  #contact h2 {
+    padding-right: 10px;
+    margin-right: 20px;
+  }
+  #contact .section-content {
+    justify-content: space-evenly;
+    font-size: 25px;
+  }
+  
+  #contact .section-content a {
+    text-decoration: none;
+    color: navy;
+    border-bottom: navy 5px solid;
+  }
+
+@media screen and (max-width: 1400px) {
+    .section-title {
+        font-size: 50px;
+        border-right: none;
+    }   
+}
+
+@media screen and (max-width: 1180px) {
+    .section-title {
+        font-size: 40px;}
+        nav {
+            flex-direction: column;
+        }
+}
+
+@media screen and (max-width: 1000px) {
+    .section-title {
+        flex-basis: 100%;
+    }
+    .section-content {
+        flex-basis: 100%;
+    }
+
 }
