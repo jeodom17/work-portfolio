@@ -17,15 +17,15 @@ h1 {
   font-size: 50px;
   margin: 10px;
 }
+
 nav ul {
   display: flex;
   list-style-type: none;
   align-items: center;
 }
 
-
 section {
-    margin: 40px;
+    margin: 10px;
 }
 
 nav ul li a {
@@ -42,6 +42,7 @@ nav ul li a {
   height: 250px;
   background-size: cover;
   position: relative;
+  margin-bottom: 50px;
 }
 
 #subheader img {
@@ -67,32 +68,36 @@ section {
 }
 
 .section-title {
-  margin: 0;  
+  display: flex;
+  margin: 0px;  
   font-size: 60px;
   border-right: navy 5px solid;
   flex-basis: 20%;
   text-align: right;
+  align-items: flex-start;
+  justify-content: right;
 }
 
 .section-content {
   display: flex;
   flex-basis: 78%;
-  /* align-items: center; */
+  align-items:flex-end;
 }
 
 #about-me {
-  align-items: center;
+  align-items: right;
 }
 #about-me h2 {
+  align-items: right;
   padding-right: 10px;
   margin-right: 20px;
 }
 
 #work .section-title {
-  align-items: center;
   padding-right: 10px;
   margin-right: 20px;
 }
+
 #work .section-content {
   display: grid;
   grid-template-areas:
@@ -100,7 +105,26 @@ section {
       " project1 project1"
       "project2  project3"
       "project4 project5";
-  grid-gap: 10px;
+  grid-gap: 30px;
+}
+#contact {
+  align-items: center;
+}
+#contact h2 {
+  padding-right: 10px;
+  margin-right: 20px;
+}
+#contact .section-content {
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+#contact .section-content a {
+  text-decoration: none;
+  color: navy;
+  border-bottom: navy 5px solid;
+}
+h2 {
+  text-align: right;
 }
 #project1 {
   position: relative;
@@ -134,7 +158,7 @@ section {
   border: turquoise 5px solid;
   background-color: powderblue;
   opacity: 75%;
-  /*position: relative;*/
+  position: relative;
   min-height: 180px;
 }
 
@@ -155,28 +179,12 @@ section {
   bottom: 20px;
 }
 
-#contact {
-    align-items: center;
-  }
-  #contact h2 {
-    padding-right: 10px;
-    margin-right: 20px;
-  }
-  #contact .section-content {
-    justify-content: space-evenly;
-    font-size: 25px;
-  }
-  
-  #contact .section-content a {
-    text-decoration: none;
-    color: navy;
-    border-bottom: navy 5px solid;
-  }
 
-@media screen and (max-width: 1400px) {
+
+@media screen and (max-width: 1800px) {
     .section-title {
         font-size: 50px;
-        border-right: none;
+        
     }   
 }
 
