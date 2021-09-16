@@ -11,9 +11,9 @@ https://github.com/jeodom17/work-portfolio
 https://jeodom17.github.io/work-portfolio/
 
 
-![](./portfolio_ss1.png)
+![](portfolio_ss1.png)
 
-![](./portfolio_ss2.png)
+![](../portfolio_ss2.png)
 
 
 
