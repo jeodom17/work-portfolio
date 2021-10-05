@@ -86,6 +86,7 @@ section {
   align-items: flex-end;
   display: flex;
   padding: 25px;
+  font-size: 25px;
 }
 
 #about-me {
@@ -135,20 +136,20 @@ h2 {
   position: relative;
   grid-area: project1;
   min-height: 240px;
-  background-image: url("../images/mern-stack.png");
+  background-image: url("../images/Index.gif");
   background-size: cover;
 }
 #project2 {
   position: relative;
   grid-area: project2;
-  background-image: url("../images/led-wall.jpeg");
+  background-image: url("../images/pwGen.png");
   background-size: cover;
 
 }
 #project3 {
   position: relative;
   grid-area: project3;
-  background-image: url("../images/calculator.jpeg");
+  background-image: url("../images/project_screenshot.jpg");
   background-size: cover;
 
 }
